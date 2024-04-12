@@ -17,5 +17,10 @@ pipeline {
                 echo '... deploy success ...'
             }
         }
+        stage('Clean up') {
+            steps {
+                echo '... clean up success ...'
+            }
+        }
     }
 }
