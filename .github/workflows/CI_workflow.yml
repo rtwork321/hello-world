@@ -12,7 +12,7 @@ on:
 jobs:
   build:
     name: Build
-    runs-on: ubuntu-latest
+    runs-on: self-hosted
     steps:
       - uses: actions/checkout@v3
 
@@ -24,7 +24,7 @@ jobs:
 
   tests:
     name: Tests
-    runs-on: ubuntu-latest
+    runs-on: self-hosted
     steps:
 
       - name: ... tests success ...
@@ -32,7 +32,7 @@ jobs:
 
   deploy:
     name: Deploy
-    runs-on: ubuntu-latest
+    runs-on: self-hosted
     steps:
 
       - name: ... deploy success ...
@@ -40,7 +40,7 @@ jobs:
 
   cleanUp:
     name: Clean up
-    runs-on: ubuntu-latest
+    runs-on: self-hosted
     steps:
       
       - name: ... clean up success ...
