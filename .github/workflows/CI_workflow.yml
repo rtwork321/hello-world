@@ -19,6 +19,9 @@ jobs:
       - name: ... build success ...
         run: echo ... build success ...
 
+      - name: ... check node version ...
+        run: node -v 
+
   tests:
     name: Tests
     runs-on: ubuntu-latest
@@ -34,7 +37,7 @@ jobs:
 
       - name: ... deploy success ...
         run: echo ... deploy success ...
-        
+
   cleanUp:
     name: Clean up
     runs-on: ubuntu-latest
